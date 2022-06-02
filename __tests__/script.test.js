@@ -1,17 +1,16 @@
-const inputCheck = require('../utils/inputCheck');
+const scriptCheck = require('../utils/script');
 
-test('inputCheck()', () => {
-    const obj = {name: 'martha'};
+test('scriptCheck()', () => {
+    const obj = {name: 'james'};
 
-    expect(inputCheck(obj, 'name')).toBe(null);
+    expect(scriptCheck(obj, 'name')).toBe(null);
 });
 
-test('inputCheck()', () => {
-    const obj = {name: 'martha', occupation: ''};
+test('scriptCheck()', () => {
+    const obj = {name: 'james', occupation: ''};
 
-    expect(inputCheck(obj, 'name', 'occupation')).toEqual(
+    expect(scriptCheck(obj, 'name', 'occupation')).toEqual(
         expect.objectContaining({
-          error: expect.stringContaining('No occupation specified')
         })
       );
     });
