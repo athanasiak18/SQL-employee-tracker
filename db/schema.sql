@@ -4,6 +4,10 @@ CREATE DATABASE employeedatabase2022;
 
 USE employeedatabase2022;
 
+DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS role;
+DROP TABLE IF EXISTS departmentid;
+
 CREATE TABLE department (
   id INT AUTO_INCREMENT NOT NULL,
   department_name VARCHAR(30) NOT NULL,
