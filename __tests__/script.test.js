@@ -8,3 +8,10 @@ test('inputCheck()', () => {
 
 test('inputCheck()', () => {
     const obj = {name: 'martha', occupation: ''};
+
+    expect(inputCheck(obj, 'name', 'occupation')).toEqual(
+        expect.objectContaining({
+          error: expect.stringContaining('No occupation specified')
+        })
+      );
+    });
