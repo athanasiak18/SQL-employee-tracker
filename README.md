@@ -8,4 +8,4 @@ npm install inquirer mysql2 console.table --save
 
 ## Video Walkthrough
 
-.mp3
+.mp4
