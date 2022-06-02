@@ -1,7 +1,11 @@
 # Employee Tracker
 
 ## Description
-An application to manage a company's employee database
+A way for business owners can manage department, roles, and employees for organizational purposes
 
-## Video
-Application walk-through: video link
+## Installation
+npm install inquirer mysql2 console.table --save
+
+## Video Walkthrough
+
+.mp3
